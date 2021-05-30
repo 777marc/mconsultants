@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default () => {
+    return (
+        <>
+            <div className="wrapper"
+                style={{ 
+                    backgroundImage: "url(/img/home.jpg)",
+                    height: '100vh',
+                    backgroundSize: '100% auto',
+                    backgroundRepeat: 'no-repeat',
+                    opacity: '0.2'
 
-export default App;
+                }}>
+            </div>
+            <div className="center">
+                <h1>mconsultants</h1>
+            </div>
+
+        </>
+    );
+};
